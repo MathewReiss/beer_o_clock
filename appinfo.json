@@ -1,0 +1,22 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "MathewReiss",
+    "longName": "Beer O'Clock",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Beer O'Clock",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "7c9ae046-18ed-40d7-9a37-9161cf498b9c",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
