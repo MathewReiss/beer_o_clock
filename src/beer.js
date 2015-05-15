@@ -7,8 +7,6 @@ Pebble.addEventListener("ready", function(){
 	}
 	next_friday.setHours(16);
 	next_friday.setMinutes(30);
-	next_friday.setSeconds(0);
-	next_friday.setMilliseconds(0);
 	
 	for(var i = 0; i < 10; i++){
 		//console.log("Raw: " + next_friday);
@@ -16,7 +14,7 @@ Pebble.addEventListener("ready", function(){
 
 		//console.log("Final: " + next_friday);
 		var beer_pin = {
-			"id" : "beer_pin_"+i,
+			"id" : "beer_pin-"+i,
 			"time": next_friday,
 			"duration": 60,
 			"layout": {
@@ -52,7 +50,7 @@ function timelineRequest(pin, type, callback) {
   // Create XHR
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
-    //console.log('Timeline: response received: ' + this.responseText);
+    console.log('Timeline: response received: ' + this.responseText);
   };
   xhr.open(type, url);
 
@@ -64,7 +62,7 @@ function timelineRequest(pin, type, callback) {
 
     // Send
     xhr.send(JSON.stringify(pin));
-   // console.log('Timeline: Request sent');
+    console.log('Timeline: Request sent');
   }, function(error) { console.error('Timeline: Error getting timeline token: ' + error); });
 }
 
