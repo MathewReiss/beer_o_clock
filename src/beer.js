@@ -15,7 +15,7 @@ Pebble.addEventListener("ready", function(){
 		//console.log("Final: " + next_friday);
 		var beer_pin = {
 			"id" : "beer_pin-"+i,
-			"time": next_friday,
+			"time": next_friday.toISOString(),
 			"duration": 60,
 			"layout": {
 				"title": "Happy Hour!",

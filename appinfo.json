@@ -4,13 +4,20 @@
         ""
     ],
     "companyName": "MathewReiss",
-    "longName": "Beer O'Clock",
+    "longName": "BeerTime",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/bottle_icon.png",
+                "menuIcon": true,
+                "name": "ICON",
+                "type": "png"
+            }
+        ]
     },
     "sdkVersion": "3",
-    "shortName": "Beer O'Clock",
+    "shortName": "BeerTime",
     "targetPlatforms": [
         "basalt"
     ],
